@@ -1,3 +1,4 @@
+//Clase libro con los atributos titulo, autor y anioPublicacion 
 import java.io.Serializable;
 
 public class Libro implements Serializable {
