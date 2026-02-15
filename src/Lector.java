@@ -4,8 +4,8 @@ import java.io.ObjectInputStream;
 import java.util.List;
 
 public class Lector {
-    //Metodo leerLibro para crear el fichero binario, le se pasa un String 
-    //con la ruta y nombre del archivo 
+    //Metodo leerLibro para leer el fichero binario, se le pasa un String 
+    //con el nombre del archivo 
     public void leerLibro(String archivo) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(archivo))) {
             List<Libro> libros = (List<Libro>) ois.readObject();
